@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -28,8 +32,48 @@
   color: #61dafb;
 }
 
+.title {
+  font-weight: 700;
+  margin: 10px;
+}
+
+div.form-input {
+  margin: 30px;
+}
+
+input.input-todo {
+  margin: 5px;
+  width: 280px;
+  height: 36px;
+}
+
+button.btn.btn-secondary {
+  height: 36px;
+  margin-bottom: 6px;
+}
+
+div.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px;
+  /* border: 10px; */
+}
+
+
 .checked-item {
   text-decoration: line-through;
+}
+
+button.btn.btn-outline-primary {
+  margin: 10px;
+  border-radius: 180px;
+}
+
+div.filter-btn {
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {

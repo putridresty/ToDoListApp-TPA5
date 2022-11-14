@@ -1,6 +1,8 @@
 import './App.css'
 import TodoInput from './components/TodoInput'
 import TodoList from './components/TodoList'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 function App() {
 

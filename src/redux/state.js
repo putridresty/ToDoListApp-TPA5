@@ -9,6 +9,6 @@ export let todos = [
   },
   {
     id: 3,
-    name: "Gropu Project FronEnd Bootcamp",
+    name: "Group Project FronEnd Bootcamp",
   },
 ];

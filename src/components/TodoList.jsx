@@ -6,7 +6,7 @@ function TodoList() {
   let todos = useSelector((state) => state);
 
   return (
-    <div className="">
+    <div className="card-list">
       {todos.map((todo) => {
         return <TodoItem key={todos.id} todo={todo} />;
       })}

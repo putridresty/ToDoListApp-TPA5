@@ -16,7 +16,7 @@ function TodoItem({ todo }) {
   };
 
   return (
-    <div className="">
+    <div className="card w-100 h50">
       <input
         name="checkbox"
         value={checked.checkbox}
@@ -31,6 +31,7 @@ function TodoItem({ todo }) {
           onChange={(e) => {
             setName(e.target.value);
           }}
+          className="update-form"
         />
       ) : (
         <p className={checked ? "checked-item" : ""}>{todo.name}</p>
@@ -48,10 +49,12 @@ function TodoItem({ todo }) {
             setName(todo.name);
           }
           setEditable(!editable);
-        }}>
+        }}
+        
+        className="btn btn-primary">
         {editable ? "Update" : "Edit"}
       </button>
-      <button className="" onClick={() => dispatch(deleteTodo(todo.id))}>
+      <button className="btn btn-danger" onClick={() => dispatch(deleteTodo(todo.id))}>
         Delete
       </button>
     </div>
